@@ -1,6 +1,9 @@
-import Log from "./log";
+import React from "react";
+import { render } from "react-dom";
 
-const logger = new Log();
+const app = document.getElementById('app');
 
-logger.log('Hello, world!');
-logger.asyncLog(1000, 'Hello, world! Async!');
+render(
+  <div>Hello!</div>,
+  app,
+)
