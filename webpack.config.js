@@ -1,6 +1,6 @@
 const path = require('path');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-const { webpack } = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -13,7 +13,7 @@ const makePath = (dir) => path.resolve(__dirname, dir);
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
-  entry: makePath('./src/index.js'),
+  entry: makePath('./index.js'),
   mode: isDevelopment ? 'development' : 'production',
   module: {
     rules: [
@@ -34,6 +34,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new HtmlWebpackPlugin({ template: './public/index.html' }),
     isDevelopment && new ReactRefreshWebpackPlugin(),
   ].filter(Boolean),
   /** @type {import('webpack-dev-server').Configuration} */
@@ -47,6 +48,7 @@ module.exports = {
   },
   output: {
     path: makePath('./dist'),
-    filename: 'bundle.js',
+    filename: 'index.bundle.js',
+    clean: true,
   },
 }
