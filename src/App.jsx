@@ -1,4 +1,5 @@
 import React from 'react';
+import ExampleComponent from './ExampleComponents';
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <p>
         This setup doesn't use Create React App!
       </p>
+      <ExampleComponent />
     </>
   )
 }
