@@ -10,5 +10,5 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
   },
-  "include": ["src/**/*", "index.js"]
+  "include": ["src/**/*", "index.js", "*.d.ts"]
 }

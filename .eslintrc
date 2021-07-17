@@ -2,6 +2,7 @@
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
+  "ignorePatterns": ["*.d.ts"],
   "rules": {
     "prettier/prettier": ["error"]
   }
