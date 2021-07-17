@@ -1,0 +1,17 @@
+{
+  "name": "react-plain-template",
+  "version": "0.0.1",
+  "description": "React App template (JS/React/Webpack)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Webpack",
+    "JavaScript",
+    "Template"
+  ],
+  "author": "Bulat Murtazin @ InDogeWeTrust",
+  "license": "MIT"
+}
