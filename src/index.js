@@ -6,4 +6,4 @@ const app = document.getElementById('app');
 render(
   <div>Hello!</div>,
   app,
-)
+);
