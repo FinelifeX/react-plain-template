@@ -4,6 +4,7 @@
   "description": "React App template (JS/React/Webpack)",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,6 +16,10 @@
   "author": "Bulat Murtazin @ InDogeWeTrust",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@types/webpack": "^5.28.0",
+    "babel-loader": "^8.2.2",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
