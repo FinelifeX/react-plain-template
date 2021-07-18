@@ -7,7 +7,7 @@
     "start": "cross-env NODE_ENV=development webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint --ext .jsx,.js src/",
-    "lint-fix": "eslint --fix --ext .jsx,.js src/",
+    "lint-fix": "eslint --fix --ext .jsx,.js index.js src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

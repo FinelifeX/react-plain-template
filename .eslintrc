@@ -3,6 +3,9 @@
   "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
   "ignorePatterns": ["*.d.ts"],
+  "env": {
+    "browser": true
+  },
   "rules": {
     "prettier/prettier": ["error"]
   }
